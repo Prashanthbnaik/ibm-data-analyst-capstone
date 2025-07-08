@@ -23,41 +23,44 @@ This capstone project focuses on analyzing developer survey data to uncover tren
 - Higher education levels are linked to more stable employment and higher pay brackets.
 - Certain technologies are more in demand across specific regions, highlighting localized skill trends.
 
-├── 1 - Explore Dataset.ipynb
-│   Initial exploration of the developer survey dataset and its structure.
-│
-├── 2.a - Collect Data(API).ipynb
-│   Collected job posting data using a public jobs API for skills comparison.
-│
-├── 2.a - JobsAPI.ipynb
-│   Performed exploratory checks and insights extraction on the API job data.
-│
-├── 2.a - job-postings (Collected from API).xlsx
-│   Raw job postings dataset saved from API responses.
-│
-├── 2.a - job-postings-languages (Collected from API).xlsx
-│   Extracted programming languages mentioned in API job postings.
-│
-├── 2.b - Collect Data(WebScrapping).ipynb
-│   Performed web scraping to gather skills and language demand from job portals.
-│
-├── 3.b - Data_Wrangling.ipynb
-│   Cleaned, imputed, normalized, and prepared the developer survey dataset.
-│
-├── 4 - Exploratory Data Analysis.ipynb
-│   Performed detailed EDA including distribution, outliers, trends, and correlation.
-│
-├── 5 - DataVisualization.ipynb
-│   Created summary plots and charts for insight communication.
-│
-├── 6 - Dashboard-with-Cognos-Dashboard-Embedded-(CDE).pdf
-│   Developed a dynamic BI dashboard using IBM Cognos to showcase insights.
-│
-├── 7 - Findings-Report-Presentation.pdf
-│   Final presentation summarizing the full analysis, insights, and recommendations.
-│
-└── README.md
-    Project overview, objectives, structure, and usage guide.
+## Project Structure
+
+- `1 - Explore Dataset.ipynb`  
+  Initial exploration of the Stack Overflow developer survey dataset.
+
+- `2.a - Collect Data(API).ipynb`  
+  Collected live job data using a public job listing API to analyze required skills.
+
+- `2.a - JobsAPI.ipynb`  
+  Performed analysis on API responses to extract job-related trends and languages.
+
+- `2.a - job-postings (Collected from API).xlsx`  
+  Excel export of job listings collected via API.
+
+- `2.a - job-postings-languages (Collected from API).xlsx`  
+  Excel export of language mentions in job descriptions.
+
+- `2.b - Collect Data(WebScrapping).ipynb`  
+  Scraped skills data from job portals to compare with survey results.
+
+- `3.b - Data_Wrangling.ipynb`  
+  Cleaned, imputed missing values, removed duplicates, and normalized key fields.
+
+- `4 - Exploratory Data Analysis.ipynb`  
+  Performed statistical and visual EDA on experience, salary, remote work, and satisfaction.
+
+- `5 - DataVisualization.ipynb`  
+  Built summary charts and comparisons across programming languages, roles, and countries.
+
+- `6 - Dashboard-with-Cognos-Dashboard-Embedded-(CDE).pdf`  
+  Interactive dashboard created with IBM Cognos to visualize final insights.
+
+- `7 - Findings-Report-Presentation.pdf`  
+  Final capstone presentation summarizing methodology, insights, and recommendations.
+
+- `README.md`  
+  Project overview, structure, approach, and usage instructions.
+
 
 ## Final Output
 

@@ -1,90 +1,65 @@
-# IBM Data Analyst Capstone Project: Global Tech Job Market Analysis
-
-This repository contains the final capstone project for the IBM Data Analyst Professional Certificate. It demonstrates a complete data analytics workflow—from data acquisition and cleaning to exploratory analysis, visualization, and business reporting—based on a global dataset of tech job postings.
+# IBM Data Analyst Capstone Project
 
 ## Project Objective
 
-To analyze a dataset of global tech job postings with the goal of identifying regional hiring trends, demand for remote work, role types, and employment structures, enabling data-driven recommendations for both job seekers and hiring managers.
-
-## Business Context
-
-In the post-pandemic digital economy, demand for skilled technology professionals is rapidly evolving. Organizations increasingly adopt hybrid and remote work models, while job seekers navigate a dynamic hiring landscape. Understanding job market trends across cities, employment types, and work settings is critical for informed workforce planning.
+This capstone project focuses on analyzing developer survey data to uncover trends in programming skills, work preferences, compensation, and job satisfaction. The goal is to identify high-demand technologies and understand how experience, education, and employment type impact developer career outcomes. The project simulates a real-world data analysis engagement for a global IT consulting firm aiming to guide strategic workforce planning.
 
 ## Tools and Technologies
 
-- Programming: Python  
-- Libraries: Pandas, NumPy, Matplotlib, Seaborn  
-- Platform: Jupyter Notebook  
-- Reporting: PowerPoint  
-- Dataset: Provided via IBM Skills Network (CSV format)
+- Python (Pandas, NumPy, Matplotlib, Seaborn)
+- IBM Cognos Analytics
+- Excel
+- Data Cleaning and Wrangling Techniques
+- Statistical Analysis
+- Exploratory Data Analysis (EDA)
+- Data Normalization and Outlier Detection (Z-Score, IQR)
+- Sql
 
-## Dataset Overview
+## Key Insights
 
-The dataset contains tech job listings with attributes including:
+- Python, SQL, and JavaScript are consistently among the most used and desired programming languages.
+- Hybrid work has emerged as the dominant model, especially for full-time professionals.
+- Compensation and job satisfaction increase with years of professional coding experience.
+- Higher education levels are linked to more stable employment and higher pay brackets.
+- Certain technologies are more in demand across specific regions, highlighting localized skill trends.
 
-- Job Title  
-- Location  
-- Company  
-- Work Setting (Remote, On-site, Hybrid)  
-- Employment Type (Full-time, Part-time, Contract)  
-- Experience Level  
-- Date Posted
+├── 1 - Explore Dataset.ipynb
+│   Initial exploration of the developer survey dataset and its structure.
+│
+├── 2.a - Collect Data(API).ipynb
+│   Collected job posting data using a public jobs API for skills comparison.
+│
+├── 2.a - JobsAPI.ipynb
+│   Performed exploratory checks and insights extraction on the API job data.
+│
+├── 2.a - job-postings (Collected from API).xlsx
+│   Raw job postings dataset saved from API responses.
+│
+├── 2.a - job-postings-languages (Collected from API).xlsx
+│   Extracted programming languages mentioned in API job postings.
+│
+├── 2.b - Collect Data(WebScrapping).ipynb
+│   Performed web scraping to gather skills and language demand from job portals.
+│
+├── 3.b - Data_Wrangling.ipynb
+│   Cleaned, imputed, normalized, and prepared the developer survey dataset.
+│
+├── 4 - Exploratory Data Analysis.ipynb
+│   Performed detailed EDA including distribution, outliers, trends, and correlation.
+│
+├── 5 - DataVisualization.ipynb
+│   Created summary plots and charts for insight communication.
+│
+├── 6 - Dashboard-with-Cognos-Dashboard-Embedded-(CDE).pdf
+│   Developed a dynamic BI dashboard using IBM Cognos to showcase insights.
+│
+├── 7 - Findings-Report-Presentation.pdf
+│   Final presentation summarizing the full analysis, insights, and recommendations.
+│
+└── README.md
+    Project overview, objectives, structure, and usage guide.
 
-## Methodology
+## Final Output
 
-1. Data Import and Inspection  
-   - Loaded and explored dataset structure, data types, and missing values.
+This project demonstrates the full lifecycle of a real-world data analytics engagement, from raw data ingestion to executive-level storytelling. It aligns with industry-standard practices in analytical thinking, stakeholder communication, and insight-driven reporting.
 
-2. Data Cleaning and Transformation  
-   - Standardized column names, handled null entries, removed duplicates, and formatted categorical fields.
-
-3. Exploratory Data Analysis (EDA)  
-   - Analyzed job distribution by city, role type, experience level, and employment setting.  
-   - Used group-by aggregations to uncover patterns in hiring and work formats.
-
-4. Data Visualization  
-   - Developed clear and interpretable visualizations using Seaborn and Matplotlib.  
-   - Visuals include bar plots, frequency charts, and comparative analyses.
-
-5. Business Reporting  
-   - Key findings presented in a PowerPoint slide deck, formatted for non-technical stakeholders.
-
-## Key Findings
-
-- Top Hiring Cities: Washington D.C., New York, and Los Angeles consistently showed the highest volume of tech job listings.  
-- Remote Work Trends: A significant share of job roles are either fully remote or offer hybrid options.  
-- Job Roles in Demand: High frequency observed for developer, analyst, and engineer roles.  
-- Employment Structure: Full-time positions dominated the listings, followed by contract-based roles.
-
-## Deliverables
-
-- `Capstone_Project_Notebook.ipynb`: Fully documented Python notebook with step-by-step analysis.  
-- `Final_Presentation.pptx`: Executive-level summary report for business presentation.  
-- `jobs_data.csv`: Original dataset used for analysis.
-
-## Repository Structure
-
-```
-ibm-data-analyst-capstone/
-├── Capstone_Project_Notebook.ipynb     # Jupyter notebook containing full analysis
-├── Final_Presentation.pptx             # Presentation of key insights and recommendations
-├── jobs_data.csv                       # Input dataset (CSV format)
-└── README.md                           # Project documentation
-```
-
-## How to Reproduce
-
-1. Clone the repository:
-   ```
-   git clone https://github.com/Prashanthbnaik/ibm-data-analyst-capstone.git
-   cd ibm-data-analyst-capstone
-   ```
-
-2. Open the notebook:
-   - Use Jupyter Notebook or JupyterLab  
-   - Run all cells sequentially for reproducibility
-
-## Author
-
-This project was completed as part of the IBM Data Analyst Professional Certificate.  
-Prepared and submitted by: **Prashanth B**
